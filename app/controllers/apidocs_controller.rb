@@ -5,14 +5,14 @@ class ApidocsController < ActionController::Base
     key :swagger, '2.0'
     info do
       key :version, '1.0.0'
-      key :title, 'Trailhead API'
+      key :title, 'Sample API'
       key :description, 'A sample API that exposes data to public '
-      key :termsOfService, 'http://helloreverb.com/terms/'
+      key :termsOfService, 'http://xyz.com/terms/'
       contact do
-        key :name, 'Trailhead API Team'
+        key :name, 'API Team'
       end
       license do
-        key :name, 'MIT'
+        key :name, 'None'
       end
     end
     tag do

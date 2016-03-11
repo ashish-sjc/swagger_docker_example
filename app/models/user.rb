@@ -12,6 +12,7 @@ class User < ActiveRecord::Base
     end
     property :age do
       key :type, :integer
+      key :format, :int64
     end
     property :location do
       key :type, :string

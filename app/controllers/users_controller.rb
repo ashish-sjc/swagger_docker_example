@@ -5,8 +5,8 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
 
-  swagger_path 'api/users' do
-    operation :post do
+  swagger_path '/api/v1/users' do
+    operation :get do
       key :description, 'Provides a list of users in trailhead based on the search criteria'
       key :operationId, 'listUsers'
       key :produces, [
@@ -15,13 +15,6 @@ class UsersController < ApplicationController
       key :tags, [
         'user'
       ]
-      parameter do
-        key :name, :q
-        key :in, :body
-        key :description, 'either CSV consiting of SFID/Username/Email/Domain'
-        key :required, true
-        key :type, :string
-      end
       response 200 do
         key :description, 'user list response'
         schema do
