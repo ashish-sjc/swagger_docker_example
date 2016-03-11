@@ -8,16 +8,10 @@ class ApidocsController < ActionController::Base
       key :title, 'Sample API'
       key :description, 'A sample API that exposes data to public '
       key :termsOfService, 'http://xyz.com/terms/'
-      contact do
-        key :name, 'API Team'
-      end
-      license do
-        key :name, 'None'
-      end
     end
     tag do
-      key :name, 'user'
-      key :description, 'Users operations'
+      key :name, 'Users'
+      key :description, 'List users'
       externalDocs do
         key :description, 'Find more info here'
         key :url, 'https://swagger.io'
