@@ -3,10 +3,6 @@ class User < ActiveRecord::Base
 
   swagger_schema :User do
     key :required, [:id, :name]
-    property :id do
-      key :type, :integer
-      key :format, :int64
-    end
     property :name do
       key :type, :string
     end
@@ -17,5 +13,6 @@ class User < ActiveRecord::Base
     property :location do
       key :type, :string
     end
+    
   end
 end
